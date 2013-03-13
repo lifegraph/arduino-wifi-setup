@@ -1,4 +1,4 @@
-#WiFlySetup, a tutorial for getting your WiFly shield up and running
+# How to get a WiFly module up and running
 
 This tutorial is wrtten for setting up a [Sparkfun WiFly Module ($35)](https://www.sparkfun.com/products/10822).
 
