@@ -1,12 +1,19 @@
-# How to get a WiFly module up and running
+# How to get an Arduino connected to the internet using WiFly and Lifegraph
 
-This tutorial is wrtten for setting up a [Sparkfun WiFly Module ($35)](https://www.sparkfun.com/products/10822).
-
-**What you'll learn:** How to correctly set up your WiFly shield, in order to get your Arduino talking to the internet. It is assumed your Arduino environment has already been configured. 
+**What you'll learn:** 
+* How to correctly set up and solder your WiFly module
+* How to install the Arduino libraries for WiFlyHQ and Lifegraph
+* How to get your Arduino talking to the internet by making an example GET request
 
 **What you'll need:**
-* [A WiFly Module](https://www.sparkfun.com/products/10822) ($35)
 * [An Arduino](https://www.sparkfun.com/products/11021) ($30)
+* [A WiFly Module](https://www.sparkfun.com/products/10822) ($35)
+* A Wifi network to connect to
+* Strength of a tiger
+
+If you've never touched an Arduino, make sure you've [set up your Arduino environment](http://arduino.cc/en/Guide/HomePage)!
+
+Let's do it!
 
 ## Soldering the WiFly (XBee form factor)
 
@@ -21,26 +28,39 @@ These 4 pins correspond to the following on the WiFly module
 * Pin 3 &mdash; This is the Receiver pin for the WiFly. Connect it to Digital pin 3 on the Arduino.
 * Pin 10 &mdash; Connect this to GND.
 
-We recommend using female to female header pins because the WiFly is rather small and soldering directly pin to pin can be frustrating. 
-Note that after soldering, if everything is correct, a red light will blink on the WiFly. 
+We recommend using [male to male header pins](https://www.sparkfun.com/products/116) because the WiFly is rather small and soldering directly pin to pin can be frustrating. 
+Note that after soldering and connecting to the Arduino, if everything is correct, a red light will blink on the WiFly. 
 
 ![WiFly all wired up](http://i.imgur.com/EDxmchO.png)
 
-## Making HTTP Requests with the WiFly
+Awesome job! Now we have the hardware set up, let's set up the software libraries.
 
-We'll be using [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ)as our library for interfacing with the WiFly module. This allows us to talk to the WiFly over serial.
+## Installing the WiFlyHQ and Lifegraph Arduino Libraries
 
-In order to setup WiFlyHQ, you'll need to download it to your Arduino libaries. To do this, go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ), click on the
-"zip" button to download a zip file of the directory, then extract the files into your Arduino libraries folder. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a library folder, you'll need to make one. 
+**We'll be using:**
+* [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ) for interfacing with the WiFly module
+* [Lifegraph](https://github.com/lifegraph/arduino-lifegraph) for making http calls easily
 
+In order to setup the WiFlyHQ and Lifegraph Arduino Libraries, you'll need to download them both from github to your Arduino libraries folder. You can do this with git or without!
+
+**With Git:**
+If you have git, clone the WiFlyHQ repository and the Lifegraph repository into your Arduino libraries directory. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one.
 ```
-cd ~/Documents/Arduino/libraries;
-git clone https://github.com/harlequin-tech/WiFlyHQ;
+cd ~/Documents/Arduino/libraries
+git clone https://github.com/harlequin-tech/WiFlyHQ
+git clone https://github.com/lifegraph/arduino-lifegraph
 ```
 
+**Without Git:**
+Go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ/archive/master.zip) to download a zip file of the directory, then extract the files into your Arduino libraries folder. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one. Then go to [Lifegraph](https://github.com/lifegraph/arduino-lifegraph/archive/master.zip) to download a zip file of the directory, and again extract the files into your Arduino libraries folder.
+
+The finished libraries folder should have a WiFlyHQ folder and an arduino-lifegraph folder.
+
+
+## Time to talk to the internet
 After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ library if you go to Sketch -> Import Library.
 
-After you have the library working, open up a new sketch in your Arduino environment, and copy the code for the [httpclient example in this repo](https://raw.github.com/lifegraph/graphbutton-wifly/master/httpclient/httpclient.ino).  
+After you have the library working, open up a new sketch in your Arduino environment, and copy the code for the [httpclient example](https://github.com/lifegraph/wifly-setup/blob/master/httpclient/httpclient.ino).  
 
 In `httpclient.ino`, you'll need to change the SSID (name of your network) and the password to work with your own WiFi network:
 
