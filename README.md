@@ -52,36 +52,33 @@ git clone https://github.com/lifegraph/arduino-lifegraph Lifegraph
 ```
 
 **Without Git:**
-Go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ/archive/master.zip) to download a zip file of the directory, then extract the files into your Arduino libraries folder. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one. Then go to [Lifegraph](https://github.com/lifegraph/arduino-lifegraph/archive/master.zip) to download a zip file of the directory, and again extract the files into your Arduino libraries folder.
+Go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ/archive/master.zip) to download a zip file of the directory, then extract the files into your Arduino libraries folder and call the extracted folder WiflyHQ. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one. Then go to [Lifegraph](https://github.com/lifegraph/arduino-lifegraph/archive/master.zip) to download a zip file of the directory, and again extract the files into your Arduino libraries folder, this time calling the folder Lifegraph.
 
-The finished libraries folder should have a WiFlyHQ folder and an arduino-lifegraph folder.
+The finished libraries folder should have a WiFlyHQ folder and an Lifegraph folder.
 
 ![Arduino Libraries all installed in the Arduino/libraries directory](https://raw.github.com/lifegraph/wifly-setup/master/imgs/libraries_installed.png)
 
 ## Time to talk to the internet.
 
-After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ and Lifegraph library if you go to Sketch -> Import Library.
+After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ and Lifegraph library if you go to Sketch -> Import Library. If you get an error complaining about a library not being named correctly (because it has a dash), just rename that folder in the Arduino/libraries folder to be WiFlyHQ or Lifegraph. Dashes are bad.
 
-After you have the library working, open up a new sketch in your Arduino environment, and copy the code for the [httpclient example](https://github.com/lifegraph/wifly-setup/blob/master/httpclient/httpclient.ino).  
+After you have the libraries installed, open up a new sketch in your Arduino environment, and copy the code for the [helloworld example in lifegraph-arduino](https://github.com/lifegraph/arduino-lifegraph/blob/master/examples/helloworld.ino).  
 
-In `httpclient.ino`, you'll need to change the SSID (name of your network) and the password to work with your own WiFi network:
+In `helloworld.ino` (lines 16 and 17), you'll need to change the SSID (name of your network) and the password to work with your own WiFi network:
 
 ```ino
 const char mySSID[] = "your_ssid";
 const char myPassword[] = "your_password";
 ```
 
-The next step is to fill in the appropriate post URL, host, and content type in `httpclient.ino`. For example, if you were doing the [Graph Button](https://github.com/lifegraph/graphbutton-wifly.git) tutorial, those fields might look something like: 
+To see if the code is working, we will test by doing a GET for the Lifegraph Labs Facebook Page.
 
-```ino
-wifly.println("POST /action/60ce6bdda1e131973c722d0906524b2ed24c44a6 HTTP/1.1");
-wifly.println("Host: graphbutton.herokuapp.com:80");
-wifly.println("Content-type: application/json");
-```
+Running the code will turn on a light attached to pin 13 and output on the terminal if there was a successful get request to the lifegraphlabs Facebook Page!
+However, you can configure `helloworld.ino` to point to any Facebook graph endpoint to see that we can connect to the internet and everything is set up correctly.
 
-However, you can configure `httpclient.ino` to point to any action or app you create. 
+Great work! You have connected your hardware to the internet!
 
 ## Want to learn more? 
-
+**Get Help, Give Feedback, and More:** 
 [Lifegraph Labs](http://www.lifegraphlabs.com) has [Tutorials](http://lifegraphlabs.com/how-to) to connect the real world with the digital, [Tools](http://lifegraphlabs.com/tools) to get you started quickly, and [Ideas](http://lifegraphlabs.com/ideas) of awesome things you could build right now. [Go there now!](http://www.lifegraphlabs.com) 
 
