@@ -21,7 +21,7 @@ There are 4 pins that you need to connect from the WiFly module to the Arduino: 
 
 These 4 pins correspond to the following on the WiFly module
 
-![WiFly](https://raw.github.com/lifegraph/graphbutton-wifly/master/imgs/wifly.png)
+![WiFly](https://raw.github.com/lifegraph/wifly-setup/master/imgs/wifly.png)
 
 * Pin 1 &mdash; 3.3v. Connect this to the **3.3v pin** on the Arduino.
 * Pin 2 &mdash; This is the Transmitter pin for the WiFly. Connect it to Digital pin 2 on the Arduino.
@@ -48,7 +48,7 @@ If you have git, clone the WiFlyHQ repository and the Lifegraph repository into 
 ```
 cd ~/Documents/Arduino/libraries
 git clone https://github.com/harlequin-tech/WiFlyHQ
-git clone https://github.com/lifegraph/arduino-lifegraph
+git clone https://github.com/lifegraph/arduino-lifegraph Lifegraph
 ```
 
 **Without Git:**
@@ -56,9 +56,11 @@ Go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ/archive/master.zip) to
 
 The finished libraries folder should have a WiFlyHQ folder and an arduino-lifegraph folder.
 
+![Arduino Libraries all installed in the Arduino/libraries directory](https://raw.github.com/lifegraph/wifly-setup/master/imgs/libraries_installed.png)
 
-## Time to talk to the internet
-After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ library if you go to Sketch -> Import Library.
+## Time to talk to the internet.
+
+After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ and Lifegraph library if you go to Sketch -> Import Library.
 
 After you have the library working, open up a new sketch in your Arduino environment, and copy the code for the [httpclient example](https://github.com/lifegraph/wifly-setup/blob/master/httpclient/httpclient.ino).  
 
