@@ -1,4 +1,4 @@
-# How to get an Arduino connected to the internet using WiFly and Lifegraph
+# Setting up an Arduino, installing libraries, and connecting to Wifi.
 
 ![Wifi Tutorial](http://i.imgur.com/VZjmVht.png)
 
