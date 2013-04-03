@@ -23,7 +23,7 @@ There are 4 pins that you need to connect from the WiFly module to the Arduino: 
 
 These 4 pins correspond to the following on the WiFly module
 
-![WiFly](https://raw.github.com/lifegraph/wifly-setup/master/imgs/wifly.png)
+![WiFly](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/wifly.png)
 
 * Pin 1 &mdash; 3.3v. Connect this to the **3.3v pin** on the Arduino.
 * Pin 2 &mdash; This is the Transmitter pin for the WiFly. Connect it to Digital pin 9 on the Arduino.
@@ -59,7 +59,7 @@ Go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ/archive/master.zip) to
 
 The finished libraries folder should have a WiFlyHQ folder and an Lifegraph folder.
 
-![Arduino Libraries all installed in the Arduino/libraries directory](https://raw.github.com/lifegraph/wifly-setup/master/imgs/libraries_installed.png)
+![Arduino Libraries all installed in the Arduino/libraries directory](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/libraries_installed.png)
 
 ## Time to talk to the internet.
 
@@ -81,11 +81,11 @@ However, you can configure `helloworld.ino` to point to any Facebook graph endpo
 
 Make sure you set the SSID and Password. Upload the code to the Arduino and press Tools -> Serial Monitor to see the output (makes sure the baud rate in the bottom right is set to 9600).
 
-![Arduino serial monitor](https://raw.github.com/lifegraph/wifly-setup/master/imgs/serial_monitor.png)
+![Arduino serial monitor](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/serial_monitor.png)
 
 Great work! You have connected your hardware to the internet!
 
-![Arduino output](https://raw.github.com/lifegraph/wifly-setup/master/imgs/arduino_output.png)
+![Arduino output](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/arduino_output.png)
 
 If you get an error, such as the WiFly not connecting or having get prompt errors, simply try again.
 
