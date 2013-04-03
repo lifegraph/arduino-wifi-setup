@@ -1,6 +1,6 @@
 # How to get an Arduino connected to the internet using WiFly and Lifegraph
 
-![Wifi Tutorial](http://i.imgur.com/VZjmVht.png)
+->![Wifi Tutorial](http://i.imgur.com/VZjmVht.png)<-
 
 **What you'll learn:** 
 * How to correctly set up and solder your WiFly module
