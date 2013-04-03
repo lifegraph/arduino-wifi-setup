@@ -24,8 +24,8 @@ These 4 pins correspond to the following on the WiFly module
 ![WiFly](https://raw.github.com/lifegraph/wifly-setup/master/imgs/wifly.png)
 
 * Pin 1 &mdash; 3.3v. Connect this to the **3.3v pin** on the Arduino.
-* Pin 2 &mdash; This is the Transmitter pin for the WiFly. Connect it to Digital pin 2 on the Arduino.
-* Pin 3 &mdash; This is the Receiver pin for the WiFly. Connect it to Digital pin 3 on the Arduino.
+* Pin 2 &mdash; This is the Transmitter pin for the WiFly. Connect it to Digital pin 9 on the Arduino.
+* Pin 3 &mdash; This is the Receiver pin for the WiFly. Connect it to Digital pin 10 on the Arduino.
 * Pin 10 &mdash; Connect this to GND.
 
 We recommend using [male to male header pins](https://www.sparkfun.com/products/116) because the WiFly is rather small and soldering directly pin to pin can be frustrating. 
@@ -62,7 +62,7 @@ The finished libraries folder should have a WiFlyHQ folder and an Lifegraph fold
 
 After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ and Lifegraph library if you go to Sketch -> Import Library. If you get an error complaining about a library not being named correctly (because it has a dash), just rename that folder in the Arduino/libraries folder to be WiFlyHQ or Lifegraph. Dashes are bad.
 
-After you have the libraries installed, open up a new sketch in your Arduino environment, and copy the code for the [helloworld example in lifegraph-arduino](https://github.com/lifegraph/arduino-lifegraph/blob/master/examples/helloworld.ino).  
+After you have the libraries installed, open up a new sketch in your Arduino environment, and copy the code for the [helloworld example in lifegraph-arduino](https://github.com/lifegraph/arduino-lifegraph/blob/master/examples/helloworld/helloworld.ino).  
 
 In `helloworld.ino` (lines 16 and 17), you'll need to change the SSID (name of your network) and the password to work with your own WiFi network:
 
