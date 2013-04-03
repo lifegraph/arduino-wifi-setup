@@ -76,6 +76,8 @@ To see if the code is working, we will test by doing a GET for the Lifegraph Lab
 Running the code will turn on a light attached to pin 13 and output on the terminal if there was a successful get request to the lifegraphlabs Facebook Page!
 However, you can configure `helloworld.ino` to point to any Facebook graph endpoint to see that we can connect to the internet and everything is set up correctly.
 
+Make sure you set the SSID and Password. Upload the code to the Arduino and press Tools -> Serial Monitor to see the output (makes sure the baud rate in the bottom right is set to 9600). If you get an error, such as the WiFly not connecting or having get prompt errors, simply try again.
+
 Great work! You have connected your hardware to the internet!
 
 ## Want to learn more? 
