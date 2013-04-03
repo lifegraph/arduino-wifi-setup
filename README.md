@@ -17,7 +17,15 @@ If you've never touched an Arduino, make sure you've [set up your Arduino enviro
 
 Let's do it!
 
-## Soldering the WiFly (XBee form factor)
+##0. Making sure the Arduino works
+
+Make sure you have the Arduino Software installed: http://arduino.cc/en/main/software
+
+Open up the Arduino IDE. Make sure your Arduino works by going to File -> Examples -> Basic -> Blink. Upload the code to your Arduino by selecting the correct usb port on Tools->Serial Port and select the correct arduino board from Tools->board. Upload your the blink code by clicking on the upload button. 
+
+This will make a light on your Arduino blink and is a super basic test of whether everything is working. 
+
+## 1. Soldering the WiFly (XBee form factor)
 
 There are 4 pins that you need to connect from the WiFly module to the Arduino: 3.3v, GND, TX (for transmitting), and RX (for receiving).
 
@@ -37,7 +45,7 @@ Note that after soldering and connecting to the Arduino, if everything is correc
 
 Awesome job! Now we have the hardware set up, let's set up the software libraries.
 
-## Installing the WiFlyHQ and Lifegraph Arduino Libraries
+## 2. Installing the WiFlyHQ and Lifegraph Arduino Libraries
 
 **We'll be using:**
 * [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ) for interfacing with the WiFly module
@@ -61,7 +69,7 @@ The finished libraries folder should have a WiFlyHQ folder and an Lifegraph fold
 
 ![Arduino Libraries all installed in the Arduino/libraries directory](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/libraries_installed.png)
 
-## Time to talk to the internet.
+## 3. Making http requests
 
 After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ and Lifegraph library if you go to Sketch -> Import Library. If you get an error complaining about a library not being named correctly (because it has a dash), just rename that folder in the Arduino/libraries folder to be WiFlyHQ or Lifegraph. Dashes are bad.
 
