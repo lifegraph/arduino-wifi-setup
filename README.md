@@ -78,8 +78,6 @@ However, you can configure `helloworld.ino` to point to any Facebook graph endpo
 
 Make sure you set the SSID and Password. Upload the code to the Arduino and press Tools -> Serial Monitor to see the output (makes sure the baud rate in the bottom right is set to 9600). If you get an error, such as the WiFly not connecting or having get prompt errors, simply try again.
 
-Make sure you set the SSID and Password. Upload the code to the Arduino and press Tools -> Serial Monitor to see the output (makes sure the baud rate in the bottom right is set to 9600). If you get an error, such as the WiFly not connecting or having get prompt errors, simply try again.
-
 Great work! You have connected your hardware to the internet!
 
 ## Want to learn more? 
