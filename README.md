@@ -1,4 +1,4 @@
-# Setting up an Arduino, installing libraries, and connecting to Wifi.
+# Setting up an Arduino and connecting it to Wifi
 
 ![Wifi Tutorial](http://i.imgur.com/VZjmVht.png)
 
