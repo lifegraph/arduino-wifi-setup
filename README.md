@@ -44,15 +44,16 @@ Awesome job! Now we have the hardware set up, let's set up the software librarie
 In order to setup the WiFlyHQ and Lifegraph Arduino Libraries, you'll need to download them both from github to your Arduino libraries folder. You can do this with git or without!
 
 **With Git:**
-If you have git, clone the WiFlyHQ repository and the Lifegraph repository into your Arduino libraries directory. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one.
+If you have git, clone the WiFlyHQ repository and the Lifegraph repository into your Arduino libraries directory. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one. sm130 for RFID reading is a good idea to install if you will be building Lifegraph-powered projects.
 ```
 cd ~/Documents/Arduino/libraries
 git clone https://github.com/harlequin-tech/WiFlyHQ
 git clone https://github.com/lifegraph/arduino-lifegraph Lifegraph
+git clone https://github.com/lifegraph/sm130
 ```
 
 **Without Git:**
-Go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ/archive/master.zip) to download a zip file of the directory, then extract the files into your Arduino libraries folder and call the extracted folder WiflyHQ. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one. Then go to [Lifegraph](https://github.com/lifegraph/arduino-lifegraph/archive/master.zip) to download a zip file of the directory, and again extract the files into your Arduino libraries folder, this time calling the folder Lifegraph.
+Go to [WiFlyHQ](https://github.com/harlequin-tech/WiFlyHQ/archive/master.zip) to download a zip file of the directory, then extract the files into your Arduino libraries folder and call the extracted folder WiflyHQ. On OSX this is typically in `~/Documents/Arduino/libaries/`. If you don't have a libraries folder, you'll need to make one. Then go to [Lifegraph](https://github.com/lifegraph/arduino-lifegraph/archive/master.zip) to download a zip file of the directory, and again extract the files into your Arduino libraries folder, this time calling the folder Lifegraph. It's a good idea to do the same with [sm130](https://github.com/lifegraph/sm130/archive/master.zip) if you might use RFID in the future or build any Lifegraph-powered projects in the future.
 
 The finished libraries folder should have a WiFlyHQ folder and an Lifegraph folder.
 
