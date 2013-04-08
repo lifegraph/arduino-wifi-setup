@@ -41,7 +41,9 @@ These 4 pins correspond to the following on the WiFly module
 We recommend using [male to male header pins](https://www.sparkfun.com/products/116) because the WiFly is rather small and soldering directly pin to pin can be frustrating. 
 Note that after soldering and connecting to the Arduino, if everything is correct, a red light will blink on the WiFly. 
 
-![WiFly all wired up](http://i.imgur.com/EDxmchO.png)
+![WiFly all wired up](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/photo_1.JPG)
+![WiFly all wired up](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/photo_2.JPG)
+![WiFly all wired up](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/photo_3.JPG)
 
 Awesome job! Now we have the hardware set up, let's set up the software libraries.
 
