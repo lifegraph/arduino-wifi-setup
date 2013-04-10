@@ -1,6 +1,6 @@
 # Setting up an Arduino and connecting it to Wifi
 
-![Wifi Tutorial](http://i.imgur.com/VZjmVht.png)
+[![Wifi Tutorial](http://i.imgur.com/VZjmVht.png)](http://www.lifegraphlabs.com/how-to)
 
 **What you'll learn:** 
 * How to correctly set up and solder your WiFly module
