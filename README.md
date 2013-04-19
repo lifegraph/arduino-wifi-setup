@@ -31,7 +31,7 @@ There are 4 pins that you need to connect from the WiFly module to the Arduino: 
 
 These 4 pins correspond to the following on the WiFly module
 
-![WiFly](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/wifly.png)
+![WiFly](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/wifly-setup.png)
 
 * Pin 1 &mdash; 3.3v. Connect this to the **3.3v pin** on the Arduino.
 * Pin 2 &mdash; This is the Transmitter pin for the WiFly. Connect it to Digital pin 9 on the Arduino.
