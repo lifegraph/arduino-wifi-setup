@@ -41,11 +41,12 @@ These 4 pins correspond to the following on the WiFly module
 We recommend using [male to male header pins](https://www.sparkfun.com/products/116) because the WiFly is rather small and soldering directly pin to pin can be frustrating. 
 Note that after soldering and connecting to the Arduino, if everything is correct, a red light will blink on the WiFly. 
 
-![WiFly all wired up](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/photo_1.JPG)
+<!--![WiFly all wired up](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/photo_1.JPG)
 ![WiFly all wired up](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/photo_2.JPG)
 ![WiFly all wired up](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/photo_3.JPG)
+-->
 
-Awesome job! Now we have the hardware set up, let's set up the software libraries.
+Now we have the hardware set up, the next step is to set up the software libraries.
 
 ## 2. Installing the WiFlyHQ and Lifegraph Arduino Libraries
 
@@ -71,7 +72,7 @@ The finished libraries folder should have a WiFlyHQ folder and an Lifegraph fold
 
 ![Arduino Libraries all installed in the Arduino/libraries directory](https://raw.github.com/lifegraph/arduino-wifi-setup/master/imgs/libraries_installed.png)
 
-## 3. Making http requests
+## 3. Talking to the internet
 
 After you add the library, you'll need to restart the Arduino IDE for it to pick up the library. If you've added it in the right place, you should be able to see the WiFlyHQ and Lifegraph library if you go to Sketch -> Import Library. If you get an error complaining about a library not being named correctly (because it has a dash), just rename that folder in the Arduino/libraries folder to be WiFlyHQ or Lifegraph. Dashes are bad.
 
@@ -99,7 +100,10 @@ Great work! You have connected your hardware to the internet!
 
 If you get an error, such as the WiFly not connecting or having get prompt errors, simply try again.
 
-## Want to learn more? 
+## Next steps 
+* [GraphButton](https://github.com/lifegraph/graphbutton-wifly) - press the button and have it post a message to your Facebook
+* [Notification light](https://github.com/lifegraph/notificationlight) - a light that lights up when you have a new facebook notification
+
 **Get Help, Give Feedback, and More:** 
 [Lifegraph Labs](http://www.lifegraphlabs.com) has [Tutorials](http://lifegraphlabs.com/how-to) to connect the real world with the digital, [Tools](http://lifegraphlabs.com/tools) to get you started quickly, and [Ideas](http://lifegraphlabs.com/ideas) of awesome things you could build right now. [Go there now!](http://www.lifegraphlabs.com) 
 
